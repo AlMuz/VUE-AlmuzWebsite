@@ -1,1 +1,10 @@
-{}
+{
+  "jumbotron": {
+    "nameAndSurname": "Алексей Музыченко",
+    "position": "Full Stack Веб Разработчик"
+  },
+  "navbar": {
+    "mainPage": "Главная страница",
+    "aboutMe": "Обо мне"
+  }
+}

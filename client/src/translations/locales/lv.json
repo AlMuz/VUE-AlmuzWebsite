@@ -1,1 +1,10 @@
-{}
+{
+  "jumbotron": {
+    "nameAndSurname": "Aleksejs Muzicenko",
+    "position": "Full Stack Web Programmetajs"
+  },
+  "navbar": {
+    "mainPage": "Galvena lapa",
+    "aboutMe": "Par mani"
+  }
+}
