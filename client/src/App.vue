@@ -18,6 +18,9 @@ export default {
   components: {
     Jumbotron,
     CustomNavbar
+  },
+  beforeCreate() {
+    this.$store.dispatch('setLanguages');
   }
 };
 </script>
