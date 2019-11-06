@@ -7,7 +7,8 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     selectedLanguage: null,
-    languages: []
+    languages: [],
+    layout: null
   },
 
   getters: {
@@ -16,27 +17,47 @@ export default new Vuex.Store({
     },
     getSelectedLanguage(state) {
       return state.selectedLanguage;
+    },
+    getLayout(state) {
+      return state.layout;
     }
   },
 
   mutations: {
-    setLanguages(state, data) {
+    setAppConfiguration(state, data) {
       state.selectedLanguage = data.selectedLanguage;
       state.languages = data.languages;
+      state.layout = data.layout;
     },
     changeLanguage(state, language) {
       state.selectedLanguage = language;
+    },
+    setIntroSkip(state) {
+      state.layout = 'DefaultLayout';
     }
   },
 
   actions: {
-    setLanguages({ commit }) {
+    configureApp({ commit }) {
       var languages = Object.keys(i18n.messages);
       var selectedLanguage = i18n.locale;
-      commit('setLanguages', {
+      var layout = 'DefaultLayout';
+      var intro = localStorage.getItem("intro");
+
+      if (!JSON.parse(intro)) {
+        localStorage.setItem('intro', false);
+        layout = 'ConversationLayout';
+      }
+
+      commit('setAppConfiguration', {
         languages,
-        selectedLanguage
+        selectedLanguage,
+        layout
       });
+    },
+    skipIntro({ commit }) {
+      localStorage.setItem('intro', true);
+      commit('setIntroSkip');
     },
     changeLanguage({ commit }, language) {
       i18n.locale = language;

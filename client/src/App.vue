@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <component v-bind:is="layout"></component>
+    <transition name="fade" :duration="1000" mode="out-in">
+      <component v-bind:is="layout"></component>
+    </transition>
   </div>
 </template>
 
@@ -16,12 +18,11 @@ export default {
   },
   computed: {
     layout () {
-    //  return this.$store.getters.layout
-    return 'DefaultLayout'
+      return this.$store.getters.getLayout;
    }
   },
   beforeCreate() {
-    this.$store.dispatch('setLanguages');
+    this.$store.dispatch('configureApp');
   }
 };
 </script>
@@ -32,5 +33,11 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
+}
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
 }
 </style>
