@@ -1,23 +1,24 @@
 <template>
-  <b-container id="app">
-    <b-row>
-      <b-col>
-        <Jumbotron />
-        <CustomNavbar />
-        <router-view />
-      </b-col>
-    </b-row>
-  </b-container>
+  <div id="app">
+    <component v-bind:is="layout"></component>
+  </div>
 </template>
 
 <script>
-import CustomNavbar from '@/components/CustomNavbar';
-import Jumbotron from '@/components/Jumbotron';
+import DefaultLayout from '@/layouts/Default';
+import ConversationLayout from '@/layouts/Conversation';
+
 export default {
   name: 'app',
   components: {
-    Jumbotron,
-    CustomNavbar
+    DefaultLayout,
+    ConversationLayout
+  },
+  computed: {
+    layout () {
+    //  return this.$store.getters.layout
+    return 'DefaultLayout'
+   }
   },
   beforeCreate() {
     this.$store.dispatch('setLanguages');
