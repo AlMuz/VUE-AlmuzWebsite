@@ -6,5 +6,9 @@
   "navbar": {
     "mainPage": "Galvena lapa",
     "aboutMe": "Par mani"
+  },
+  "notFound": {
+    "header": "Ups! Lapa nav atrasta",
+    "text": "man žēl, bet jūsu pieprasītā lapa netika atrasta"
   }
 }

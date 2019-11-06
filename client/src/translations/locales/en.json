@@ -6,5 +6,9 @@
   "navbar": {
     "mainPage": "Main Page",
     "aboutMe": "About me"
+  },
+  "notFound": {
+    "header": "Oops! Page not found",
+    "text": "i'm sorry, but the page you requested was not found"
   }
 }
