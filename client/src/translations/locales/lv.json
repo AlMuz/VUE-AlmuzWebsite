@@ -5,7 +5,8 @@
   },
   "navbar": {
     "mainPage": "Galvena lapa",
-    "aboutMe": "Par mani"
+    "aboutMe": "Par mani",
+    "contactMe": "Sazinies ar mani"
   },
   "notFound": {
     "header": "Ups! Lapa nav atrasta",

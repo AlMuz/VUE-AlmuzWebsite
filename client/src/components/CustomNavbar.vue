@@ -3,6 +3,7 @@
     <b-navbar-nav>
       <b-nav-item to="/">{{ $t("navbar.mainPage") }}</b-nav-item>
       <b-nav-item to="/about">{{ $t("navbar.aboutMe") }}</b-nav-item>
+      <b-nav-item to="/contact">{{ $t("navbar.contactMe") }}</b-nav-item>
     </b-navbar-nav>
     <b-navbar-nav class="ml-auto">
       <b-nav-item-dropdown :text="selectedLanguage | capitalize" right>

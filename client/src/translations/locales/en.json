@@ -5,7 +5,8 @@
   },
   "navbar": {
     "mainPage": "Main Page",
-    "aboutMe": "About me"
+    "aboutMe": "About me",
+    "contactMe": "Contact me"
   },
   "notFound": {
     "header": "Oops! Page not found",
