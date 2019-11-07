@@ -1,4 +1,10 @@
 {
+  "conversation": {
+    "great": "Замечательно!",
+    "nameYourself": "Пожалуйста, представьтесь!",
+    "choosedLanguage": "Вы выбрали русский язык.",
+    "name": "Введите ваше имя"
+  },
   "jumbotron": {
     "nameAndSurname": "Алексей Музыченко",
     "position": "Full Stack Веб Разработчик"

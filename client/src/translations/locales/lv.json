@@ -1,4 +1,10 @@
 {
+  "conversation": {
+    "great": "Lieliski!",
+    "nameYourself": "Lūdzu, nosauciet sevi!",
+    "choosedLanguage": "Jūs izvēlējāties latviesu valodu.",
+    "name": "Jusu vards"
+  },
   "jumbotron": {
     "nameAndSurname": "Aleksejs Muzicenko",
     "position": "Full Stack Web Programmetajs"
