@@ -8,7 +8,8 @@ export default new Vuex.Store({
   state: {
     selectedLanguage: null,
     languages: [],
-    layout: null
+    layout: null,
+    visitorName: 'Anonym'
   },
 
   getters: {
@@ -20,6 +21,9 @@ export default new Vuex.Store({
     },
     getLayout(state) {
       return state.layout;
+    },
+    getVisitorName(state) {
+      return state.visitorName;
     }
   },
 
@@ -34,6 +38,9 @@ export default new Vuex.Store({
     },
     setIntroSkip(state) {
       state.layout = 'DefaultLayout';
+    },
+    setVisitorName(state, name) {
+      state.visitorName = name;
     }
   },
 
@@ -63,6 +70,9 @@ export default new Vuex.Store({
       i18n.locale = language;
       localStorage.setItem('language', language);
       commit('changeLanguage', language);
+    },
+    changeVisitorName({commit}, name) {
+      commit('setVisitorName', name);
     }
   },
 });
