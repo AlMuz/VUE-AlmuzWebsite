@@ -91,68 +91,73 @@ export default {
     justify-content: flex-end !important;
     text-align: right !important;
   }
-  #chat .robot .bubble {
-    background: #272643;
-    border-radius: .4em;
-    color: #FFF;
-    padding: 20px;
-    margin-bottom: 10px;
-  }
-  #chat .robot .bubble:after {
-  	content: '';
-  	position: absolute;
-  	right: 0;
-  	top: 50%;
-  	width: 0;
-  	height: 0;
-  	border: 20px solid transparent;
-  	border-left-color: #272643;
-  	border-right: 0;
-  	margin-top: -20px;
-  }
-  #chat .person .bubble {
-    color: #272643;
-    border-radius: .4em;
-    background: #FFF;
-    padding: 20px;
-    margin-bottom: 10px;
-  }
-  #chat .person .bubble:after {
-  	content: '';
-  	position: absolute;
-  	left: 0;
-  	top: 50%;
-  	width: 0;
-  	height: 0;
-  	border: 20px solid transparent;
-  	border-right-color: #FFF;
-  	border-left: 0;
-  	margin-top: -20px;
-  }
+
   #chat .information {
     justify-content: center!important;
     text-align: center !important;
   }
+
+  #chat .bubble {
+    border-radius: .4em;
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+
+  #chat .bubble:after {
+    content: '';
+  	position: absolute;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    margin-top: -20px;
+  }
+
   #chat .bubble > * {
     margin: 0;
   }
+
+  #chat .robot .bubble {
+    background: #272643;
+    color: #FFF;
+  }
+
+  #chat .robot .bubble:after {
+  	right: 0;
+  	border-left-color: #272643;
+  	border-right: 0;
+  }
+
+  #chat .person .bubble {
+    color: #272643;
+    background: #FFF;
+  }
+
+  #chat .person .bubble:after {
+  	left: 0;
+  	border-right-color: #FFF;
+  	border-left: 0;
+  }
+
   .slide-enter {
     opacity: 0;
   }
+
   .slide-enter-active {
     animation: slide-in 1s ease-out forwards;
     transition: opacity .5s;
   }
-  .slide-leave {
-  }
+
   .slide-leave-active {
     animation: slide-out 1s ease-out forwards;
     transition: opacity 1s;
     opacity: 0;
   }
+
   .slide-move {
     transition: transform 1s;
   }
+
   @keyframes slide-in {
     from {
       transform: translateY(20px);
@@ -161,6 +166,7 @@ export default {
       transform: translateY(0);
     }
   }
+  
   @keyframes slide-out {
     from {
       transform: translateY(0);
