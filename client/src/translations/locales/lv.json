@@ -3,7 +3,8 @@
     "great": "Lieliski!",
     "nameYourself": "Lūdzu, nosauciet sevi!",
     "choosedLanguage": "Jūs izvēlējāties latviesu valodu.",
-    "name": "Jusu vards"
+    "name": "Jusu vards",
+    "niceToMeetYou": "Priecājos ar jums iepazīties, {name}!"
   },
   "jumbotron": {
     "nameAndSurname": "Aleksejs Muzicenko",

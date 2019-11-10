@@ -3,7 +3,8 @@
     "great": "Great!",
     "nameYourself": "Please, name yourself!",
     "choosedLanguage": "You choosed english language.",
-    "name": "Your name"
+    "name": "Your name",
+    "niceToMeetYou": "Nice to meet you, {name}!"
   },
   "jumbotron": {
     "nameAndSurname": "Alexey Muzichenko",
