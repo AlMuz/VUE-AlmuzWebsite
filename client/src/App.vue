@@ -29,6 +29,7 @@ export default {
 
 <style>
   body {
+    color: #272643!important;
     background-color: #ebf1f4!important;
   }
   #app {

@@ -9,7 +9,7 @@
               <p v-html="renderText(value)"></p>
               <b-button v-if="value.languages" v-for="language in value.languages" variant="primary" v-on:click="languageSelected(language)" class="mx-4">{{language | capitalize}}</b-button>
               <b-input v-if="value.input && value.input == 'name'" id="inline-form-input" :placeholder="$t('conversation.name')" v-model="nameInput" v-on:keyup.enter="submitNameInput" :disabled="isDisabled"></b-input>
-              <b-button v-if="value.smiles" v-for="smile in value.smiles" variant="success" v-on:click="smileSelected" class="mx-4" v-html="smile"></b-button>
+              <b-button v-if="value.smiles" v-for="smile in value.smiles" v-on:click="smileSelected" class="mx-4" v-html="smile"></b-button>
             </div>
           </b-col>
         </b-row>
@@ -158,6 +158,11 @@ export default {
   	left: 0;
   	border-right-color: #FFF;
   	border-left: 0;
+  }
+
+  #chat .information .bubble .btn{
+    background-color: #272643!important;
+    color: #FFF!important;
   }
 
   .slide-enter {
