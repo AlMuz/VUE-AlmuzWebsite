@@ -17,7 +17,7 @@
   };
 </script>
 
-<style>
+<style lang="css" scoped>
   .jumbotron {
     margin-bottom: 0!important;
     border-radius: 0!important;

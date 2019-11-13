@@ -21,7 +21,7 @@ export default {
 }
 </script>
 
-<style media="screen">
+<style lang="css" scoped>
   .header {
     padding: 50px;
     border-bottom: 1px solid #272643;
