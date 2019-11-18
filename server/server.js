@@ -4,6 +4,7 @@ import cors from 'cors';
 import bodyParser from 'body-parser';
 import morgan from 'morgan';
 import winston from 'winston';
+const routes = require("./routes/index");
 
 // Defining port
 const port = process.env.PORT || 9000;
@@ -17,7 +18,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // Defining the Routes
-app.use('/api', require('./routes/index'));
+routes(app);
 
 // Listening to port
 app.listen(port);

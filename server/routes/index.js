@@ -1,13 +1,10 @@
-// Define your routes
-import express from 'express';
-import path from 'path';
-const router = express.Router();
+const path = require('path');
 
-// Routes go here.
-router.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '../views', 'index.html'));
-});
+module.exports = function (app) {
 
-// Use localhost:9000/api followed by the required path.
+  app.get('/', (req,res) => {
+    res.json({data: []});
+  })
 
-module.exports = router;
+  app.use((req, res) => { res.status(404).send({error:'404'}) })
+}
