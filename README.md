@@ -1,17 +1,14 @@
-# Almuz Website Work In Progress
+# Almuz Website | Work In Progress
 
 That will be my personal website - portfolio.
-I deiced to **MEVN** development stack.
-MEVN - means **Mongo Express Vue.js and Node.js**.
-Also here used **Docker** to connect all parts together.
-
+It is developed using MEVN stack - **MongoDB Express.js Vue.js and Node.js**.
+**Docker** has been used to connect all the components for deployment.
 
 ## Folder structure
 ### client folder
-In client folder based all frontend things.
-Client makes API calls to the server where it's necessary.
+All frontend things are located in a 'client' folder.
+Client calls REST API to fetch all necessary data.
 
 ### server folder
-In server folder are Express with Mongo
-Server works only as API and returns requested data to the client.
-Also server saves all important data to Mongo Database
+Server folder contains Express.js code and Mongodb configurations.
+Server is just a REST API that exposes all the data used by the client, as well as persists important data to MongoDB database.
