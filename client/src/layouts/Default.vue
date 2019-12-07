@@ -4,7 +4,9 @@
       <b-col>
         <Jumbotron />
         <CustomNavbar />
-        <router-view />
+        <div class="content">
+          <router-view />
+        </div>
       </b-col>
     </b-row>
   </b-container>

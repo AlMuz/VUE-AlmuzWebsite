@@ -37,6 +37,15 @@ export default {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+  .content {
+    margin: 20px;
+  }
+  .content h3 {
+    text-align: center;
+  }
+  .content h3, .content h4, .content h5 {
+    text-decoration: underline;
+  }
   .fade-enter-active, .fade-leave-active {
     transition: opacity .5s;
   }
