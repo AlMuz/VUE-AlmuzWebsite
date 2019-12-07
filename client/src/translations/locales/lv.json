@@ -8,12 +8,13 @@
   },
   "jumbotron": {
     "nameAndSurname": "Aleksejs Muzicenko",
-    "position": "Full Stack Web Programmetajs"
+    "position": "Web Programmetajs"
   },
   "navbar": {
     "mainPage": "Galvena lapa",
     "aboutMe": "Par mani",
-    "contactMe": "Sazinies ar mani"
+    "contactMe": "Sazinies ar mani",
+    "workExperience": "Darba pieredze"
   },
   "notFound": {
     "header": "Ups! Lapa nav atrasta",

@@ -8,12 +8,13 @@
   },
   "jumbotron": {
     "nameAndSurname": "Alexey Muzichenko",
-    "position": "Full Stack Web Developer"
+    "position": "Web Developer"
   },
   "navbar": {
     "mainPage": "Main Page",
     "aboutMe": "About me",
-    "contactMe": "Contact me"
+    "contactMe": "Contact me",
+    "workExperience": "Work experience"
   },
   "notFound": {
     "header": "Oops! Page not found",

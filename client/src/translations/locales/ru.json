@@ -8,12 +8,13 @@
   },
   "jumbotron": {
     "nameAndSurname": "Алексей Музыченко",
-    "position": "Full Stack Веб Разработчик"
+    "position": "Веб Разработчик"
   },
   "navbar": {
     "mainPage": "Главная страница",
     "aboutMe": "Обо мне",
-    "contactMe": "Свяжитесь со мной"
+    "contactMe": "Свяжитесь со мной",
+    "workExperience": "Опыт работы"
   },
   "notFound": {
     "header": "УПС! Страница не найдена",
