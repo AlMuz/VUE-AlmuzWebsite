@@ -30,5 +30,19 @@
     "company": "Компания",
     "itIntern": "Интерн АЙТИ",
     "webDev": "Веб Разработчик"
+  },
+  "contactMePage": {
+    "contactMe": "Свяжитесь со мной",
+    "contactMeUsing": "Не стесняйтесь связаться со мной одним из следующих способов",
+    "orContactMeUsing": "Или вы можете отправить мне сообщение через эту форму",
+    "yourEmail": "Адрес электронной почты:",
+    "yourEmailPlaceholder": "Введите электронную почту",
+    "yourEmailDescription": "Мы никогда не передадим вашу электронную почту кому-либо еще.",
+    "yourName": "Ваше имя:",
+    "yourNamePlaceholder": "Введите имя",
+    "yourMessage": "Ваше сообщение:",
+    "yourMessagePlaceholder": "Введите что-нибудь...",
+    "submitBtn": "Отправить",
+    "resetBtn": "Очистить форму"
   }
 }

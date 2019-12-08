@@ -30,5 +30,19 @@
     "company": "Uzņēmums",
     "itIntern": "Informācijas tehnoloģiju interns",
     "webDev": "Web Programmetajs"
+  },
+  "contactMePage": {
+    "contactMe": "Sazinies ar mani",
+    "contactMeUsing": "Sazinieties ar mani, izmantojot vienu no šiem veidiem",
+    "orContactMeUsing": "Vai arī varat nosūtīt man ziņojumu, izmantojot šo formu",
+    "yourEmail": "Epasta adrese:",
+    "yourEmailPlaceholder": "Ievadiet epastu",
+    "yourEmailDescription": "Mēs nekad neizpaudīsim jūsu e-pastu nevienam citam.",
+    "yourName": "Jūsu vārds:",
+    "yourNamePlaceholder": "Ievadiet vārdu",
+    "yourMessage": "Jūsu ziņa:",
+    "yourMessagePlaceholder": "Ievadiet kaut ko ...",
+    "submitBtn": "Iesniegt",
+    "resetBtn": "Notīrīt formu"
   }
 }
