@@ -19,6 +19,14 @@
     "header": "Oops! Page not found",
     "text": "i'm sorry, but the page you requested was not found"
   },
+  "mainPage": {
+    "projects": "Projects",
+    "name": "Name",
+    "language": "Language",
+    "link": "Link",
+    "created": "Created",
+    "updated": "Updated"
+  },
   "aboutMePage": {
     "aboutMe": "About me",
     "information": "I'm a 23 years old web developer from Riga, Latvia.</br> I have 2+ years experience in web development. Doing <b>back-end</b> and <b>front-end</b>. </br> Also i'm interested in mobile developing with using <b>React Native</b>.",

@@ -19,6 +19,14 @@
     "header": "Ups! Lapa nav atrasta",
     "text": "man žēl, bet jūsu pieprasītā lapa netika atrasta"
   },
+  "mainPage": {
+    "projects": "Projekti",
+    "name": "Nosaukums",
+    "language": "Programmēšanas valoda",
+    "link": "Projekta saite",
+    "created": "Izveidots",
+    "updated": "Atjaunināts"
+  },
   "aboutMePage": {
     "aboutMe": "Par mani",
     "information": "Esmu 23 gadu vecs web programmetajs no Rīga, Latvija.</br> Man ir vairāk nekā 2 gadu pieredze web izstrādē. Man patik <b>back-end</b> un <b>front-end</b>. </br> Mani interesē arī mobilo ierīču izstrāde, izmantojot <b>React Native</b>.",
