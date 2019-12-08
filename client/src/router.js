@@ -23,11 +23,6 @@ export default new Router({
       component: () => import("./views/Contact.vue")
     },
     {
-      path: "/work",
-      name: "work",
-      component: () => import("./views/Work.vue")
-    },
-    {
       path: '*',
       component: () => import("./views/404.vue")
     }

@@ -3,7 +3,6 @@
     <b-navbar-nav class="left">
       <b-nav-item to="/">{{ $t("navbar.mainPage") }}</b-nav-item>
       <b-nav-item to="/about">{{ $t("navbar.aboutMe") }}</b-nav-item>
-      <b-nav-item to="/work">{{ $t("navbar.workExperience") }}</b-nav-item>
       <b-nav-item to="/contact">{{ $t("navbar.contactMe") }}</b-nav-item>
     </b-navbar-nav>
     <b-navbar-nav class="ml-auto">
