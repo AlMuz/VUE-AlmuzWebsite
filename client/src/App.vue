@@ -17,12 +17,19 @@ export default {
     ConversationLayout
   },
   computed: {
-    layout () {
+    layout() {
       return this.$store.getters.getLayout;
-   }
+    }
   },
   beforeCreate() {
     this.$store.dispatch('configureApp');
+  },
+  metaInfo() {
+    return {
+      htmlAttrs: {
+        lang: this.$store.getters.getSelectedLanguage
+      }
+    }
   }
 };
 </script>
