@@ -11,6 +11,23 @@
         {{ value }}
       </li>
     </ul>
+    <h4>{{ $t("aboutMePage.workExperience") }}</h4>
+    <div class="table-responsive">
+      <table role="table" aria-busy="false" aria-colcount="2" class="table b-table">
+        <thead role="rowgroup">
+          <tr role="row">
+            <th role="columnheader" scope="col" aria-colindex="1"> {{ this.$t("aboutMePage.role") }} </th>
+            <th role="columnheader" scope="col" aria-colindex="2"> {{ this.$t("aboutMePage.company") }} </th>
+          </tr>
+        </thead>
+        <tbody role="rowgroup">
+          <tr role="row" v-for="value in workExperience">
+            <td role="cell"> {{ $t(`aboutMePage.${value.role}`) }} </td>
+            <td role="cell"> {{ value.company }} </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </template>
 
@@ -25,6 +42,15 @@ export default {
         "Git, Docker, Heroku",
         "Apache, Nginx",
         "Experience with Linux"
+      ],
+      fields: [
+        { key: 'role', label: this.$t("aboutMePage.role") },
+        { key: 'company', label: this.$t("aboutMePage.company") }
+      ],
+      workExperience: [
+        { role: "itIntern", company: 'Accenture Latvia' },
+        { role: "itIntern", company: 'SIA Mendo' },
+        { role: "webDev", company: 'SIA Mendo' }
       ]
     }
   }
@@ -32,4 +58,11 @@ export default {
 </script>
 
 <style lang="css" scoped>
+.table th {
+  border-bottom: 2px solid #272643;
+  border-top: 0;
+}
+.table td {
+  border-top: 1px solid #272643;
+}
 </style>

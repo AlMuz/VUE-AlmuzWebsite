@@ -51,6 +51,7 @@ export default {
     text-align: center;
   }
   .content h3, .content h4, .content h5 {
+    text-transform: uppercase;
     text-decoration: underline;
   }
   .fade-enter-active, .fade-leave-active {

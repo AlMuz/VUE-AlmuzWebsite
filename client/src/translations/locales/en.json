@@ -13,8 +13,7 @@
   "navbar": {
     "mainPage": "Main Page",
     "aboutMe": "About me",
-    "contactMe": "Contact me",
-    "workExperience": "Work experience"
+    "contactMe": "Contact me"
   },
   "notFound": {
     "header": "Oops! Page not found",
@@ -25,6 +24,11 @@
     "information": "I'm a 23 years old web developer from Riga, Latvia.</br> I have 2+ years experience in web development. Doing <b>back-end</b> and <b>front-end</b>. </br> Also i'm interested in mobile developing with using <b>React Native</b>.",
     "informationContactMe": "If you have any questions don't hesitate to leave a {action}.",
     "message": "message",
-    "techSkills": "Technical skills"
+    "techSkills": "Technical skills",
+    "workExperience": "Work experience",
+    "role": "Role",
+    "company": "Company",
+    "itIntern": "Information Technology Intern",
+    "webDev": "Web Developer"
   }
 }
