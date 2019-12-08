@@ -1,20 +1,23 @@
 <template>
-  <b-navbar>
-    <b-navbar-nav class="left">
-      <b-nav-item to="/">{{ $t("navbar.mainPage") }}</b-nav-item>
-      <b-nav-item to="/about">{{ $t("navbar.aboutMe") }}</b-nav-item>
-      <b-nav-item to="/contact">{{ $t("navbar.contactMe") }}</b-nav-item>
-    </b-navbar-nav>
-    <b-navbar-nav class="ml-auto">
-      <b-nav-item-dropdown :text="selectedLanguage | capitalize" right>
-        <b-dropdown-item
-          v-for="(language, index) in languages"
-          v-on:click="changeLanguage(language)"
-          :key="index">
-          {{ language | capitalize }}
-        </b-dropdown-item>
-      </b-nav-item-dropdown>
-    </b-navbar-nav>
+  <b-navbar toggleable="lg" type="dark" >
+    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+    <b-collapse id="nav-collapse" is-nav>
+      <b-navbar-nav class="left">
+        <b-nav-item to="/">{{ $t("navbar.mainPage") }}</b-nav-item>
+        <b-nav-item to="/about">{{ $t("navbar.aboutMe") }}</b-nav-item>
+        <b-nav-item to="/contact">{{ $t("navbar.contactMe") }}</b-nav-item>
+      </b-navbar-nav>
+      <b-navbar-nav class="ml-auto">
+        <b-nav-item-dropdown :text="selectedLanguage | capitalize" right>
+          <b-dropdown-item
+            v-for="(language, index) in languages"
+            v-on:click="changeLanguage(language)"
+            :key="index">
+            {{ language | capitalize }}
+          </b-dropdown-item>
+        </b-nav-item-dropdown>
+      </b-navbar-nav>
+    </b-collapse>
   </b-navbar>
 </template>
 
