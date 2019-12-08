@@ -1,4 +1,4 @@
-<template lang="html">
+<template>
   <div>
     <p class="orContactMeUsing">{{ $t("contactMePage.orContactMeUsing") }}:</p>
     <b-form @submit="onSubmit" @reset="onReset" v-if="show">
