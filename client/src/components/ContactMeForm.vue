@@ -59,7 +59,7 @@ export default {
     return {
       form: {
         email: "",
-        name: "",
+        name: this.$store.getters.getVisitorName ? this.$store.getters.getVisitorName : "",
         message: ""
       },
       show: true
