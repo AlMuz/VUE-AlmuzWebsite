@@ -3,19 +3,39 @@
     <h3>{{ $t("mainPage.projects") }}</h3>
     <div class="loaded" v-if="!loading">
       <div class="table-responsive">
-        <table role="table" aria-busy="false" aria-colcount="2" class="table b-table">
+        <table
+          role="table"
+          aria-busy="false"
+          aria-colcount="2"
+          class="table b-table"
+        >
           <thead role="rowgroup">
             <tr role="row">
-              <th role="columnheader" scope="col" aria-colindex="1"> {{ this.$t("mainPage.name") }} </th>
-              <th role="columnheader" scope="col" aria-colindex="2"> {{ this.$t("mainPage.language") }} </th>
-              <th role="columnheader" scope="col" aria-colindex="3"> {{ this.$t("mainPage.link") }} </th>
-              <th role="columnheader" scope="col" aria-colindex="4"> {{ this.$t("mainPage.created") }} </th>
-              <th role="columnheader" scope="col" aria-colindex="5"> {{ this.$t("mainPage.updated") }} </th>
+              <th role="columnheader" scope="col" aria-colindex="1">
+                {{ this.$t("mainPage.name") }}
+              </th>
+              <th role="columnheader" scope="col" aria-colindex="2">
+                {{ this.$t("mainPage.language") }}
+              </th>
+              <th role="columnheader" scope="col" aria-colindex="3">
+                {{ this.$t("mainPage.link") }}
+              </th>
+              <th role="columnheader" scope="col" aria-colindex="4">
+                {{ this.$t("mainPage.created") }}
+              </th>
+              <th role="columnheader" scope="col" aria-colindex="5">
+                {{ this.$t("mainPage.updated") }}
+              </th>
             </tr>
           </thead>
           <tbody role="rowgroup">
             <tr role="row" v-for="(project, pindex) in projects" :key="pindex">
-              <td role="cell" v-for="(data, name, index) in project" :class="name" :key="index">
+              <td
+                role="cell"
+                v-for="(data, name, index) in project"
+                :class="name"
+                :key="index"
+              >
                 <a :href="data" target="_blank" v-if="name == 'link'">
                   <i class="fab fa-github"></i>
                 </a>
@@ -36,8 +56,8 @@
 
 <script>
 export default {
-    props: ["loading", "projects"]
-}
+  props: ["loading", "projects"]
+};
 </script>
 
 <style lang="css" scoped>

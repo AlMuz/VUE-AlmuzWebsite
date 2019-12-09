@@ -15,15 +15,14 @@
 </template>
 
 <script>
-import CustomNavbar from '@/components/CustomNavbar';
-import Jumbotron from '@/components/Jumbotron';
+import CustomNavbar from "@/components/CustomNavbar";
+import Jumbotron from "@/components/Jumbotron";
 export default {
   components: {
     Jumbotron,
     CustomNavbar
-  },
-}
+  }
+};
 </script>
 
-<style lang="css" scoped>
-</style>
+<style lang="css" scoped></style>

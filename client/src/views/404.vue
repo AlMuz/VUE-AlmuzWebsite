@@ -15,8 +15,7 @@
 </template>
 
 <script>
-export default {
-}
+export default {};
 </script>
 
 <style lang="css" scoped>
@@ -112,5 +111,4 @@ export default {
     font-size: 16px;
   }
 }
-
 </style>

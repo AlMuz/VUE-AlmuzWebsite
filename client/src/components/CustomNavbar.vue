@@ -1,5 +1,5 @@
 <template>
-  <b-navbar toggleable="lg" type="dark" >
+  <b-navbar toggleable="lg" type="dark">
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav class="left">
@@ -12,7 +12,8 @@
           <b-dropdown-item
             v-for="(language, index) in languages"
             v-on:click="changeLanguage(language)"
-            :key="index">
+            :key="index"
+          >
             {{ language | capitalize }}
           </b-dropdown-item>
         </b-nav-item-dropdown>
@@ -38,7 +39,7 @@ export default {
       this.$store.dispatch("changeLanguage", language);
     }
   }
-}
+};
 </script>
 
 <style lang="css">

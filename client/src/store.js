@@ -1,5 +1,5 @@
-import Vue from 'vue';
-import Vuex from 'vuex';
+import Vue from "vue";
+import Vuex from "vuex";
 import i18n from "./translations/i18n";
 
 Vue.use(Vuex);
@@ -9,7 +9,7 @@ export default new Vuex.Store({
     selectedLanguage: null,
     languages: [],
     layout: null,
-    visitorName: 'Anonym'
+    visitorName: "Anonym"
   },
 
   getters: {
@@ -37,7 +37,7 @@ export default new Vuex.Store({
       state.selectedLanguage = language;
     },
     setIntroSkip(state) {
-      state.layout = 'DefaultLayout';
+      state.layout = "DefaultLayout";
     },
     setVisitorName(state, name) {
       state.visitorName = name;
@@ -48,31 +48,31 @@ export default new Vuex.Store({
     configureApp({ commit }) {
       var languages = Object.keys(i18n.messages);
       var selectedLanguage = i18n.locale;
-      var layout = 'DefaultLayout';
+      var layout = "DefaultLayout";
       var intro = localStorage.getItem("intro");
 
       if (!JSON.parse(intro)) {
-        localStorage.setItem('intro', false);
-        layout = 'ConversationLayout';
+        localStorage.setItem("intro", false);
+        layout = "ConversationLayout";
       }
 
-      commit('setAppConfiguration', {
+      commit("setAppConfiguration", {
         languages,
         selectedLanguage,
         layout
       });
     },
     skipIntro({ commit }) {
-      localStorage.setItem('intro', true);
-      commit('setIntroSkip');
+      localStorage.setItem("intro", true);
+      commit("setIntroSkip");
     },
     changeLanguage({ commit }, language) {
       i18n.locale = language;
-      localStorage.setItem('language', language);
-      commit('changeLanguage', language);
+      localStorage.setItem("language", language);
+      commit("changeLanguage", language);
     },
-    changeVisitorName({commit}, name) {
-      commit('setVisitorName', name);
+    changeVisitorName({ commit }, name) {
+      commit("setVisitorName", name);
     }
-  },
+  }
 });

@@ -5,7 +5,7 @@
         <h1>Small conversation</h1>
       </b-col>
       <b-col class="text-right">
-         <b-button v-on:click="skipTutorial">Skip button</b-button>
+        <b-button v-on:click="skipTutorial">Skip button</b-button>
       </b-col>
     </b-row>
   </b-container>
@@ -15,20 +15,20 @@
 export default {
   methods: {
     skipTutorial() {
-      this.$store.dispatch('skipIntro');
-    },
+      this.$store.dispatch("skipIntro");
+    }
   }
-}
+};
 </script>
 
 <style lang="css" scoped>
-  .header {
-    padding: 50px;
-    border-bottom: 1px solid #272643;
-  }
-  .btn {
-    background-color: #D4D4D9!important;
-    color: #272643!important;
-    border: none!important;
-  }
+.header {
+  padding: 50px;
+  border-bottom: 1px solid #272643;
+}
+.btn {
+  background-color: #D4D4D9!important;
+  color: #272643!important;
+  border: none!important;
+}
 </style>

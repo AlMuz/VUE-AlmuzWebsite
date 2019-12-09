@@ -1,9 +1,11 @@
 <template>
   <div class="about">
     <h3>{{ $t("aboutMePage.aboutMe") }}</h3>
-    <p v-html='$t("aboutMePage.information") '></p>
+    <p v-html="$t('aboutMePage.information')"></p>
     <i18n path="aboutMePage.informationContactMe" tag="p">
-      <router-link place="action" to='contact' tag='a'>{{ $t('aboutMePage.message') }}</router-link>
+      <router-link place="action" to="contact" tag="a">{{
+        $t("aboutMePage.message")
+      }}</router-link>
     </i18n>
     <h4>{{ $t("aboutMePage.techSkills") }}:</h4>
     <ul>
@@ -13,17 +15,26 @@
     </ul>
     <h4>{{ $t("aboutMePage.workExperience") }}</h4>
     <div class="table-responsive">
-      <table role="table" aria-busy="false" aria-colcount="2" class="table b-table">
+      <table
+        role="table"
+        aria-busy="false"
+        aria-colcount="2"
+        class="table b-table"
+      >
         <thead role="rowgroup">
           <tr role="row">
-            <th role="columnheader" scope="col" aria-colindex="1"> {{ this.$t("aboutMePage.role") }} </th>
-            <th role="columnheader" scope="col" aria-colindex="2"> {{ this.$t("aboutMePage.company") }} </th>
+            <th role="columnheader" scope="col" aria-colindex="1">
+              {{ this.$t("aboutMePage.role") }}
+            </th>
+            <th role="columnheader" scope="col" aria-colindex="2">
+              {{ this.$t("aboutMePage.company") }}
+            </th>
           </tr>
         </thead>
         <tbody role="rowgroup">
           <tr role="row" v-for="(value, index) in workExperience" :key="index">
-            <td role="cell"> {{ $t(`aboutMePage.${value.role}`) }} </td>
-            <td role="cell"> {{ value.company }} </td>
+            <td role="cell">{{ $t(`aboutMePage.${value.role}`) }}</td>
+            <td role="cell">{{ value.company }}</td>
           </tr>
         </tbody>
       </table>
@@ -44,17 +55,17 @@ export default {
         "Experience with Linux"
       ],
       fields: [
-        { key: 'role', label: this.$t("aboutMePage.role") },
-        { key: 'company', label: this.$t("aboutMePage.company") }
+        { key: "role", label: this.$t("aboutMePage.role") },
+        { key: "company", label: this.$t("aboutMePage.company") }
       ],
       workExperience: [
-        { role: "itIntern", company: 'Accenture Latvia' },
-        { role: "itIntern", company: 'SIA Mendo' },
-        { role: "webDev", company: 'SIA Mendo' }
+        { role: "itIntern", company: "Accenture Latvia" },
+        { role: "itIntern", company: "SIA Mendo" },
+        { role: "webDev", company: "SIA Mendo" }
       ]
-    }
+    };
   }
-}
+};
 </script>
 
 <style lang="css" scoped>

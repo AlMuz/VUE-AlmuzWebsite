@@ -7,17 +7,15 @@
 </template>
 
 <script>
-import ContactMeIcons from '@/components/ContactMeIcons';
-import ContactMeForm from '@/components/ContactMeForm';
+import ContactMeIcons from "@/components/ContactMeIcons";
+import ContactMeForm from "@/components/ContactMeForm";
 
 export default {
   components: {
     ContactMeIcons,
     ContactMeForm
   }
-}
+};
 </script>
 
-<style lang="css" scoped>
-
-</style>
+<style lang="css" scoped></style>
