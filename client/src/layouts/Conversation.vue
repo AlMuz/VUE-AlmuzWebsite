@@ -7,9 +7,13 @@
           <b-col md="4">
             <div class="bubble">
               <p v-html="renderText(value)"></p>
-              <b-button v-if="value.languages" v-for="language in value.languages" v-on:click="languageSelected(language)" class="mx-4">{{language | capitalize}}</b-button>
+              <div v-if="value.languages">
+                <b-button v-for="(language, index) in value.languages" :key="index" v-on:click="languageSelected(language)" class="mx-4">{{language | capitalize}}</b-button>
+              </div>
               <b-input v-if="value.input && value.input == 'name'" id="inline-form-input" :placeholder="$t('conversation.name')" v-model="nameInput" v-on:keyup.enter="submitNameInput" :disabled="isDisabled"></b-input>
-              <b-button v-if="value.smiles" v-for="smile in value.smiles" v-on:click="smileSelected" class="mx-4" v-html="smile"></b-button>
+              <div v-if="value.smiles">
+                <b-button v-for="(smile, index) in value.smiles" :key="index" v-on:click="smileSelected" class="mx-4" v-html="smile"></b-button>
+              </div>
             </div>
           </b-col>
         </b-row>

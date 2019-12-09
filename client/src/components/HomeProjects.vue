@@ -14,8 +14,8 @@
             </tr>
           </thead>
           <tbody role="rowgroup">
-            <tr role="row" v-for="project in projects">
-              <td role="cell" v-for="(data, name) in project" :class="name">
+            <tr role="row" v-for="(project, pindex) in projects" :key="pindex">
+              <td role="cell" v-for="(data, name, index) in project" :class="name" :key="index">
                 <a :href="data" target="_blank" v-if="name == 'link'">
                   <i class="fab fa-github"></i>
                 </a>

@@ -21,7 +21,7 @@
           </tr>
         </thead>
         <tbody role="rowgroup">
-          <tr role="row" v-for="value in workExperience">
+          <tr role="row" v-for="(value, index) in workExperience" :key="index">
             <td role="cell"> {{ $t(`aboutMePage.${value.role}`) }} </td>
             <td role="cell"> {{ value.company }} </td>
           </tr>
