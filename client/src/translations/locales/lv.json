@@ -4,6 +4,8 @@
     "nameYourself": "Lūdzu, nosauciet sevi!",
     "choosedLanguage": "Jūs izvēlējāties latviesu valodu.",
     "name": "Jusu vards",
+    "emptyInput": "Vārda lauks ir tukšs",
+    "pleaseFillInput": "Lūdzu, uzrakstiet savu vārdu!",
     "niceToMeetYou": "Priecājos ar jums iepazīties, {name}!"
   },
   "jumbotron": {

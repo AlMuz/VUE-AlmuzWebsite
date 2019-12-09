@@ -15,6 +15,7 @@
         </b-row>
       </transition-group>
     </b-container>
+    <notifications group="notify" position="bottom center"/>
   </div>
 </template>
 
@@ -94,6 +95,16 @@ export default {
       }, 1000);
     },
     submitNameInput() {
+
+      if (this.nameInput.length == 0) {
+        this.$notify({
+          group: 'notify',
+          type: 'error',
+          title: this.$t("conversation.emptyInput"),
+          text: this.$t("conversation.pleaseFillInput")
+        });
+        return
+      }
       this.$store.dispatch('changeVisitorName', this.nameInput);
       this.nameInputFilled = true;
 

@@ -1,5 +1,6 @@
 import Vue from "vue";
 import BootstrapVue from 'bootstrap-vue';
+import Notifications from 'vue-notification'
 import VueMeta from 'vue-meta'
 import App from "./App.vue";
 import router from "./router";
@@ -11,6 +12,7 @@ import 'bootstrap-vue/dist/bootstrap-vue.css';
 
 Vue.use(BootstrapVue);
 Vue.use(VueMeta);
+Vue.use(Notifications);
 
 Vue.config.productionTip = false;
 

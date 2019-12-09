@@ -4,6 +4,8 @@
     "nameYourself": "Пожалуйста, представьтесь!",
     "choosedLanguage": "Вы выбрали русский язык.",
     "name": "Введите ваше имя",
+    "emptyInput": "Вы не ввели ваше имя",
+    "pleaseFillInput": "Пожалуйста, введите ваше имя!",
     "niceToMeetYou": "Рад знакомству с вами, {name}!"
   },
   "jumbotron": {
