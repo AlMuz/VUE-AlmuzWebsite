@@ -1,4 +1,11 @@
 {
+  "meta": {
+    "titleTemplate": "Alexey Muzichenko",
+    "homePage": "Home",
+    "contactPage": "Contact me",
+    "aboutPage": "About me",
+    "conversationPage": "Conversation"
+  },
   "conversation": {
     "great": "Great!",
     "nameYourself": "Please, name yourself!",

@@ -88,6 +88,11 @@ export default {
   components: {
     ConversationHeader
   },
+  metaInfo() {
+    return {
+      title: this.$t("meta.conversationPage")
+    };
+  },
   methods: {
     languageSelected(language) {
       this.selectedLanguage = language;

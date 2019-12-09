@@ -1,4 +1,11 @@
 {
+  "meta": {
+    "titleTemplate": "Алексей Музыченко",
+    "homePage": "Главная",
+    "contactPage": "Свяжитесь со мной",
+    "aboutPage": "Обо мне",
+    "conversationPage": "Беседа"
+  },
   "conversation": {
     "great": "Замечательно!",
     "nameYourself": "Пожалуйста, представьтесь!",

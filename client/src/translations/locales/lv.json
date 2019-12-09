@@ -1,4 +1,11 @@
 {
+  "meta": {
+    "titleTemplate": "Aleksejs Muzičenko",
+    "homePage": "Galvena",
+    "contactPage": "Sazinies ar mani",
+    "aboutPage": "Par mani",
+    "conversationPage": "Saruna"
+  },
   "conversation": {
     "great": "Lieliski!",
     "nameYourself": "Lūdzu, nosauciet sevi!",
@@ -9,7 +16,7 @@
     "niceToMeetYou": "Priecājos ar jums iepazīties, {name}!"
   },
   "jumbotron": {
-    "nameAndSurname": "Aleksejs Muzicenko",
+    "nameAndSurname": "Aleksejs Muzičenko",
     "position": "Web Programmetajs"
   },
   "navbar": {

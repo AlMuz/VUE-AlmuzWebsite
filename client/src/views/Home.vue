@@ -19,6 +19,11 @@ export default {
       projects: []
     };
   },
+  metaInfo() {
+    return {
+      title: this.$t("meta.homePage")
+    };
+  },
   beforeMount() {
     axios
       .get("https://api.github.com/users/almuz/repos?sort=updated")

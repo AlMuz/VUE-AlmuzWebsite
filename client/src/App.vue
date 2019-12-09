@@ -28,7 +28,8 @@ export default {
     return {
       htmlAttrs: {
         lang: this.$store.getters.getSelectedLanguage
-      }
+      },
+      titleTemplate: `%s - ${this.$t("meta.titleTemplate")}`
     };
   }
 };

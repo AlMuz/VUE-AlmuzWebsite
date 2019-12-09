@@ -14,6 +14,11 @@ export default {
   components: {
     ContactMeIcons,
     ContactMeForm
+  },
+  metaInfo() {
+    return {
+      title: this.$t("meta.contactPage")
+    };
   }
 };
 </script>

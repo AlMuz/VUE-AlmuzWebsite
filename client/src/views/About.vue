@@ -64,6 +64,11 @@ export default {
         { role: "webDev", company: "SIA Mendo" }
       ]
     };
+  },
+  metaInfo() {
+    return {
+      title: this.$t("meta.aboutPage")
+    };
   }
 };
 </script>
