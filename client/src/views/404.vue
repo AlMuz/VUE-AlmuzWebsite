@@ -86,6 +86,10 @@ export default {
   margin-bottom: 25px;
 }
 
+.notFound h3, .notFound h4, .notFound h5 {
+  text-decoration: none;
+}
+
 @media only screen and (max-width: 767px) {
   .notFound .notFound-404 {
     height: 200px;
