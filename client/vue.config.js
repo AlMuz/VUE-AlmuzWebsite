@@ -5,8 +5,7 @@ module.exports = {
       renderRoutes: [
         '/',
         '/about',
-        '/contact',
-        '/work'
+        '/contact'
       ],
       useRenderEvent: true,
       headless: true,
