@@ -18,7 +18,7 @@
 export default {
   metaInfo() {
     return {
-      title: '404'
+      title: "404"
     };
   }
 };

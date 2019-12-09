@@ -28,7 +28,6 @@ export default {
     axios
       .get("https://api.github.com/users/almuz/repos?sort=updated")
       .then(res => {
-        console.log(res.data);
         this.projects = res.data.map(project => {
           let newProject = {};
           newProject.name = project.name;
