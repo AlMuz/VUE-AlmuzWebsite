@@ -21,6 +21,14 @@ export default {
   components: {
     Jumbotron,
     Navbar
+  },
+  head () {
+    return {
+      htmlAttrs: {
+        lang: this.$i18n.locale
+      },
+      titleTemplate: `%s - ${this.$t('meta.titleTemplate')}`
+    }
   }
 }
 </script>
