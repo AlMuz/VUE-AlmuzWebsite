@@ -68,7 +68,8 @@ module.exports = {
       ],
       langDir: 'locales/',
       defaultLocale: 'en'
-    }]
+    }],
+    '@nuxtjs/moment'
   ],
   /*
   ** Axios module configuration
