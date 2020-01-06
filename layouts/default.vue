@@ -3,6 +3,7 @@
     <b-row>
       <b-col>
         <Jumbotron />
+        <Navbar />
         <div class="content">
           <transition name="slide" mode="out-in">
             <nuxt />
@@ -15,9 +16,11 @@
 
 <script>
 import Jumbotron from '@/components/Jumbotron'
+import Navbar from '@/components/Navbar'
 export default {
   components: {
-    Jumbotron
+    Jumbotron,
+    Navbar
   }
 }
 </script>
