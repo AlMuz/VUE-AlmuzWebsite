@@ -1,7 +1,7 @@
 export default {
   meta: {
     titleTemplate: 'Alexey Muzichenko',
-    homePage: 'Home',
+    projectsPage: 'Projects Page',
     contactPage: 'Contact me',
     aboutPage: 'About me',
     conversationPage: 'Conversation'
@@ -20,7 +20,7 @@ export default {
     position: 'Web Developer'
   },
   navbar: {
-    mainPage: 'Main Page',
+    projectsPage: 'Projects Page',
     aboutMe: 'About me',
     contactMe: 'Contact me'
   },
@@ -28,7 +28,7 @@ export default {
     header: 'Oops! Page not found',
     text: 'i\'m sorry, but the page you requested was not found'
   },
-  mainPage: {
+  projectsPage: {
     projects: 'Projects',
     name: 'Name',
     language: 'Language',

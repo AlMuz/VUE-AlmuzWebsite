@@ -1,7 +1,7 @@
 export default {
   meta: {
     titleTemplate: 'Алексей Музыченко',
-    homePage: 'Главная',
+    projectsPage: 'Проекты',
     contactPage: 'Свяжитесь со мной',
     aboutPage: 'Обо мне',
     conversationPage: 'Беседа'
@@ -20,7 +20,7 @@ export default {
     position: 'Веб Разработчик'
   },
   navbar: {
-    mainPage: 'Главная страница',
+    projectsPage: 'Проекты',
     aboutMe: 'Обо мне',
     contactMe: 'Свяжитесь со мной'
   },
@@ -28,7 +28,7 @@ export default {
     header: 'УПС! Страница не найдена',
     text: 'я извиняюсь, но запрошенная вами страница не найдена'
   },
-  mainPage: {
+  projectsPage: {
     projects: 'Проекты',
     name: 'Название',
     language: 'Язык программирования',

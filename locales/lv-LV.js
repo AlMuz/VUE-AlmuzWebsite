@@ -1,7 +1,7 @@
 export default {
   meta: {
     titleTemplate: 'Aleksejs Muzičenko',
-    homePage: 'Galvena',
+    projectsPage: 'Projekti',
     contactPage: 'Sazinies ar mani',
     aboutPage: 'Par mani',
     conversationPage: 'Saruna'
@@ -20,7 +20,7 @@ export default {
     position: 'Web Programmetajs'
   },
   navbar: {
-    mainPage: 'Galvena lapa',
+    projectsPage: 'Projekti',
     aboutMe: 'Par mani',
     contactMe: 'Sazinies ar mani'
   },
@@ -28,7 +28,7 @@ export default {
     header: 'Ups! Lapa nav atrasta',
     text: 'man žēl, bet jūsu pieprasītā lapa netika atrasta'
   },
-  mainPage: {
+  projectsPage: {
     projects: 'Projekti',
     name: 'Nosaukums',
     language: 'Programmēšanas valoda',
