@@ -9,7 +9,7 @@
         <b-nav-item :to="localePath('projects')">
           {{ $t("navbar.projectsPage") }}
         </b-nav-item>
-        <b-nav-item to="/contact">
+        <b-nav-item :to="localePath('contacts')">
           {{ $t("navbar.contactMe") }}
         </b-nav-item>
       </b-navbar-nav>
