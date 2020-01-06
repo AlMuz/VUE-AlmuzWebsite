@@ -18,30 +18,27 @@
                 {{ this.$t("projectsPage.language") }}
               </th>
               <th role="columnheader" scope="col" aria-colindex="3">
-                {{ this.$t("projectsPage.link") }}
-              </th>
-              <th role="columnheader" scope="col" aria-colindex="4">
                 {{ this.$t("projectsPage.created") }}
               </th>
-              <th role="columnheader" scope="col" aria-colindex="5">
+              <th role="columnheader" scope="col" aria-colindex="4">
                 {{ this.$t("projectsPage.updated") }}
               </th>
             </tr>
           </thead>
           <tbody role="rowgroup">
-            <tr v-for="(project, pindex) in projects" :key="pindex" role="row">
+            <tr
+              v-for="(project, pindex) in filteredProjects"
+              :key="pindex"
+              @click.prevent="openProject(project.name)"
+              role="row"
+            >
               <td
                 v-for="(data, name, index) in project"
                 :class="name"
                 :key="index"
                 role="cell"
               >
-                <a :href="data" v-if="name == 'link'" target="_blank">
-                  <i class="fab fa-github" />
-                </a>
-                <p v-else>
-                  {{ data }}
-                </p>
+                {{ data }}
               </td>
             </tr>
           </tbody>
@@ -53,7 +50,29 @@
 
 <script>
 export default {
-  props: ['projects']
+  props: ['projects'],
+  computed: {
+    filteredProjects () {
+      return this.projects.map((project) => {
+        const newProject = {}
+        newProject.name = project.name
+        newProject.language = project.language
+        newProject.created = this.$moment(new Date(project.created_at)).format(
+          'YYYY-MM-DD HH:mm:ss'
+        )
+        newProject.updated = this.$moment(new Date(project.updated_at)).format(
+          'YYYY-MM-DD HH:mm:ss'
+        )
+
+        return newProject
+      })
+    }
+  },
+  methods: {
+    openProject (id) {
+      this.$router.push('/projects/' + id)
+    }
+  }
 }
 </script>
 
@@ -61,16 +80,8 @@ export default {
 thead tr {
   text-align: center;
 }
-.link {
-  text-align: center;
-}
-.link a {
-  font-size: 30px;
-}
-.link a .fab {
-  color: #272643;
-}
-.link a .fab:hover {
-  color: red;
+
+tbody tr td {
+  cursor: pointer;
 }
 </style>

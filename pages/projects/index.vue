@@ -13,20 +13,7 @@ export default {
   },
   computed: {
     projects () {
-      return this.$store.getters['projects/projects'].map((project) => {
-        const newProject = {}
-        newProject.name = project.name
-        newProject.language = project.language
-        newProject.link = project.html_url
-        newProject.created = this.$moment(new Date(project.created_at)).format(
-          'YYYY-MM-DD HH:mm:ss'
-        )
-        newProject.updated = this.$moment(new Date(project.updated_at)).format(
-          'YYYY-MM-DD HH:mm:ss'
-        )
-
-        return newProject
-      })
+      return this.$store.getters['projects/projects']
     }
   },
   async fetch ({ store }) {
