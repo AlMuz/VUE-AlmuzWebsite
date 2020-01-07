@@ -17,8 +17,16 @@ export const actions = {
     const projects = await this.$axios.$get('https://api.github.com/users/almuz/repos?sort=updated')
     commit('setAllProjects', projects)
   },
-  fetchProject ({ commit, state }, name) {
-    const project = state.projects.filter(i => i.name === name)
+  async fetchProject ({ commit, state }, name) {
+    let project = {}
+
+    // if projects store is empty - doing request to the api
+    if (state.projects.length === 0) {
+      project = await this.$axios.$get(`https://api.github.com/repos/AlMuz/${name}`)
+    } else {
+      project = state.projects.find(i => i.name === name)
+    }
+
     commit('setSelectedProject', project)
   }
 }

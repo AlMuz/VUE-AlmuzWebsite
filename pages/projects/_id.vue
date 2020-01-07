@@ -1,6 +1,6 @@
 <template>
   <div class="project">
-    <h1>{{ project.name }}</h1>
+    <h3>{{ project.name }}</h3>
   </div>
 </template>
 
@@ -11,8 +11,17 @@ export default {
       return this.$store.getters['projects/selectedProject']
     }
   },
-  fetch ({ store, params }) {
-    return store.dispatch('projects/fetchProject', params.id)
+  // checking for params id in url
+  validate ({ params }) {
+    return Boolean(params.id)
+  },
+  async fetch ({ store, params, error }) {
+    // preparing selected project data
+    try {
+      await store.dispatch('projects/fetchProject', params.id)
+    } catch (e) {
+      error()
+    }
   }
 }
 </script>
