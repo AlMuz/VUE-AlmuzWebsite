@@ -27,7 +27,10 @@ module.exports = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['~plugins/filters.js'],
+  plugins: [
+    '@plugins/filters.js',
+    { src: '@plugins/vue-notification.js', mode: 'client' }
+  ],
   /*
    ** Nuxt.js dev-modules
    */
@@ -43,6 +46,7 @@ module.exports = {
     'bootstrap-vue/nuxt',
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
+    ['cookie-universal-nuxt', { alias: 'cookiz' }],
     [
       'nuxt-i18n',
       {
