@@ -1,6 +1,5 @@
 <template>
-  <div class="chat">
-  </div>
+  <div class="chat" />
 </template>
 
 <script>
@@ -9,5 +8,4 @@ export default {
 }
 </script>
 
-<style lang="css" scoped>
-</style>
+<style lang="css" scoped></style>

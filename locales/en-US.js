@@ -26,7 +26,7 @@ export default {
   },
   notFound: {
     header: 'Oops! Page not found',
-    text: 'i\'m sorry, but the page you requested was not found'
+    text: "i'm sorry, but the page you requested was not found"
   },
   projectsPage: {
     projects: 'Projects',
@@ -38,8 +38,10 @@ export default {
   },
   aboutMePage: {
     aboutMe: 'About me',
-    information: 'I\'m a 23 years old web developer from Riga, Latvia.</br> I have 2+ years experience in web development. Doing <b>back-end</b> and <b>front-end</b>. </br> Also i\'m interested in mobile developing with using <b>React Native</b>.',
-    informationContactMe: 'If you have any questions don\'t hesitate to leave a {action}.',
+    information:
+      "I'm a 23 years old web developer from Riga, Latvia.</br> I have 2+ years experience in web development. Doing <b>back-end</b> and <b>front-end</b>. </br> Also i'm interested in mobile developing with using <b>React Native</b>.",
+    informationContactMe:
+      "If you have any questions don't hesitate to leave a {action}.",
     message: 'message',
     techSkills: 'Technical skills',
     workExperience: 'Work experience',
@@ -54,7 +56,7 @@ export default {
     orContactMeUsing: 'Or you can send me message via this form',
     yourEmail: 'Email address:',
     yourEmailPlaceholder: 'Enter email',
-    yourEmailDescription: 'We\'ll never share your email with anyone else.',
+    yourEmailDescription: "We'll never share your email with anyone else.",
     yourName: 'Your name:',
     yourNamePlaceholder: 'Enter name',
     yourMessage: 'Your message:',

@@ -1,19 +1,19 @@
 <template>
   <div class="about">
-    <h3>{{ $t("aboutMePage.aboutMe") }}</h3>
+    <h3>{{ $t('aboutMePage.aboutMe') }}</h3>
     <p v-html="$t('aboutMePage.information')" />
     <i18n path="aboutMePage.informationContactMe" tag="p">
       <nuxt-link to="/contact">
-        {{ $t("aboutMePage.message") }}
+        {{ $t('aboutMePage.message') }}
       </nuxt-link>
     </i18n>
-    <h4>{{ $t("aboutMePage.techSkills") }}:</h4>
+    <h4>{{ $t('aboutMePage.techSkills') }}:</h4>
     <ul>
       <li v-for="(value, index) in skills" :key="index">
         {{ value }}
       </li>
     </ul>
-    <h4>{{ $t("aboutMePage.workExperience") }}</h4>
+    <h4>{{ $t('aboutMePage.workExperience') }}</h4>
     <div class="table-responsive">
       <table
         role="table"
@@ -24,10 +24,10 @@
         <thead role="rowgroup">
           <tr role="row">
             <th role="columnheader" scope="col" aria-colindex="1">
-              {{ this.$t("aboutMePage.role") }}
+              {{ this.$t('aboutMePage.role') }}
             </th>
             <th role="columnheader" scope="col" aria-colindex="2">
-              {{ this.$t("aboutMePage.company") }}
+              {{ this.$t('aboutMePage.company') }}
             </th>
           </tr>
         </thead>
@@ -48,8 +48,7 @@
 
 <script>
 export default {
-
-  data () {
+  data() {
     return {
       skills: [
         'PHP, Laravel, CakePHP, Pyrocms, Wordpress',
@@ -70,7 +69,7 @@ export default {
       ]
     }
   },
-  head () {
+  head() {
     return {
       title: this.$t('meta.aboutPage')
     }

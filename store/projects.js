@@ -4,27 +4,31 @@ export const state = () => ({
 })
 
 export const mutations = {
-  setAllProjects (state, projects) {
+  setAllProjects(state, projects) {
     state.projects = projects
   },
-  setSelectedProject (state, project) {
+  setSelectedProject(state, project) {
     state.selectedProject = project
   }
 }
 
 export const actions = {
-  async fetch ({ commit }) {
-    const projects = await this.$axios.$get('https://api.github.com/users/almuz/repos?sort=updated')
+  async fetch({ commit }) {
+    const projects = await this.$axios.$get(
+      'https://api.github.com/users/almuz/repos?sort=updated'
+    )
     commit('setAllProjects', projects)
   },
-  async fetchProject ({ commit, state }, name) {
+  async fetchProject({ commit, state }, name) {
     let project = {}
 
     // if projects store is empty - doing request to the api
     if (state.projects.length === 0) {
-      project = await this.$axios.$get(`https://api.github.com/repos/AlMuz/${name}`)
+      project = await this.$axios.$get(
+        `https://api.github.com/repos/AlMuz/${name}`
+      )
     } else {
-      project = state.projects.find(i => i.name === name)
+      project = state.projects.find((i) => i.name === name)
     }
 
     commit('setSelectedProject', project)
@@ -32,6 +36,6 @@ export const actions = {
 }
 
 export const getters = {
-  projects: s => s.projects,
-  selectedProject: s => s.selectedProject
+  projects: (s) => s.projects,
+  selectedProject: (s) => s.selectedProject
 }

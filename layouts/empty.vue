@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  head () {
+  head() {
     return {
       titleTemplate: `%s - ${this.$t('meta.titleTemplate')}`
     }

@@ -38,8 +38,10 @@ export default {
   },
   aboutMePage: {
     aboutMe: 'Par mani',
-    information: 'Esmu 23 gadu vecs web programmetajs no Rīga, Latvija.</br> Man ir vairāk nekā 2 gadu pieredze web izstrādē. Man patik <b>back-end</b> un <b>front-end</b>. </br> Mani interesē arī mobilo ierīču izstrāde, izmantojot <b>React Native</b>.',
-    informationContactMe: 'Ja jums ir kādi jautājumi, nevilcinieties atstāt {action}.',
+    information:
+      'Esmu 23 gadu vecs web programmetajs no Rīga, Latvija.</br> Man ir vairāk nekā 2 gadu pieredze web izstrādē. Man patik <b>back-end</b> un <b>front-end</b>. </br> Mani interesē arī mobilo ierīču izstrāde, izmantojot <b>React Native</b>.',
+    informationContactMe:
+      'Ja jums ir kādi jautājumi, nevilcinieties atstāt {action}.',
     message: 'ziņu',
     techSkills: 'Tehniskās iemaņas',
     workExperience: 'Darba pieredze',

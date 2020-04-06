@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3>{{ $t("projectsPage.projects") }}</h3>
+    <h3>{{ $t('projectsPage.projects') }}</h3>
     <div>
       <div class="table-responsive">
         <table
@@ -12,16 +12,16 @@
           <thead role="rowgroup">
             <tr role="row">
               <th role="columnheader" scope="col" aria-colindex="1">
-                {{ this.$t("projectsPage.name") }}
+                {{ this.$t('projectsPage.name') }}
               </th>
               <th role="columnheader" scope="col" aria-colindex="2">
-                {{ this.$t("projectsPage.language") }}
+                {{ this.$t('projectsPage.language') }}
               </th>
               <th role="columnheader" scope="col" aria-colindex="3">
-                {{ this.$t("projectsPage.created") }}
+                {{ this.$t('projectsPage.created') }}
               </th>
               <th role="columnheader" scope="col" aria-colindex="4">
-                {{ this.$t("projectsPage.updated") }}
+                {{ this.$t('projectsPage.updated') }}
               </th>
             </tr>
           </thead>
@@ -29,13 +29,13 @@
             <tr
               v-for="(project, pindex) in filteredProjects"
               :key="pindex"
-              @click.prevent="openProject(project.name)"
               role="row"
+              @click.prevent="openProject(project.name)"
             >
               <td
                 v-for="(data, name, index) in project"
-                :class="name"
                 :key="index"
+                :class="name"
                 role="cell"
               >
                 {{ data }}
@@ -52,7 +52,7 @@
 export default {
   props: ['projects'],
   computed: {
-    filteredProjects () {
+    filteredProjects() {
       return this.projects.map((project) => {
         const newProject = {}
         newProject.name = project.name
@@ -69,7 +69,7 @@ export default {
     }
   },
   methods: {
-    openProject (id) {
+    openProject(id) {
       this.$router.push('/projects/' + id)
     }
   }

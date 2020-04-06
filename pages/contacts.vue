@@ -1,6 +1,6 @@
 <template>
   <div class="contact">
-    <h3>{{ $t("contactMePage.contactMe") }}</h3>
+    <h3>{{ $t('contactMePage.contactMe') }}</h3>
     <ContactMeIcons />
     <ContactMeForm />
   </div>
@@ -14,7 +14,7 @@ export default {
     ContactMeIcons,
     ContactMeForm
   },
-  head () {
+  head() {
     return {
       title: this.$t('meta.contactPage')
     }

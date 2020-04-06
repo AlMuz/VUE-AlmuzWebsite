@@ -11,17 +11,17 @@ export default {
   components: {
     Projects
   },
-  computed: {
-    projects () {
-      return this.$store.getters['projects/projects']
-    }
-  },
-  async fetch ({ store }) {
+  async fetch({ store }) {
     if (store.getters['projects/projects'].length === 0) {
       await store.dispatch('projects/fetch')
     }
   },
-  head () {
+  computed: {
+    projects() {
+      return this.$store.getters['projects/projects']
+    }
+  },
+  head() {
     return {
       title: this.$t('meta.projectsPage')
     }

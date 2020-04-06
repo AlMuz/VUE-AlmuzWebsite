@@ -1,7 +1,7 @@
 <template>
   <div>
-    <p class="orContactMeUsing">{{ $t("contactMePage.orContactMeUsing") }}:</p>
-    <b-form @submit="onSubmit" @reset="onReset" v-if="show">
+    <p class="orContactMeUsing">{{ $t('contactMePage.orContactMeUsing') }}:</p>
+    <b-form v-if="show" @submit="onSubmit" @reset="onReset">
       <b-form-group
         id="input-group-1"
         :label="$t('contactMePage.yourEmail')"
@@ -14,7 +14,7 @@
           type="email"
           required
           :placeholder="$t('contactMePage.yourEmailPlaceholder')"
-        ></b-form-input>
+        />
       </b-form-group>
 
       <b-form-group
@@ -27,7 +27,7 @@
           v-model="form.name"
           required
           :placeholder="$t('contactMePage.yourNamePlaceholder')"
-        ></b-form-input>
+        />
       </b-form-group>
       <b-form-group
         id="input-group-3"
@@ -41,36 +41,38 @@
           :placeholder="$t('contactMePage.yourMessagePlaceholder')"
           rows="3"
           max-rows="6"
-        ></b-form-textarea>
+        />
       </b-form-group>
-      <b-button type="submit" variant="primary">{{
-        $t("contactMePage.submitBtn")
-      }}</b-button>
-      <b-button type="reset" variant="danger" class="ml-3">{{
-        $t("contactMePage.resetBtn")
-      }}</b-button>
+      <b-button type="submit" variant="primary">
+        {{ $t('contactMePage.submitBtn') }}
+      </b-button>
+      <b-button type="reset" variant="danger" class="ml-3">
+        {{ $t('contactMePage.resetBtn') }}
+      </b-button>
     </b-form>
   </div>
 </template>
 
 <script>
 export default {
-  data () {
+  data() {
     return {
       form: {
         email: '',
-        name: this.$store.getters.getVisitorName ? this.$store.getters.getVisitorName : '',
+        name: this.$store.getters.getVisitorName
+          ? this.$store.getters.getVisitorName
+          : '',
         message: ''
       },
       show: true
     }
   },
   methods: {
-    onSubmit (evt) {
+    onSubmit(evt) {
       evt.preventDefault()
       alert(JSON.stringify(this.form))
     },
-    onReset (evt) {
+    onReset(evt) {
       evt.preventDefault()
       // Reset our form values
       this.form.email = ''
@@ -89,6 +91,6 @@ export default {
 
 <style lang="css" scoped>
 .orContactMeUsing {
-  font-weight: bold
+  font-weight: bold;
 }
 </style>

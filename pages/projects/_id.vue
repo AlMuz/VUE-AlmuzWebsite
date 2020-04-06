@@ -6,25 +6,24 @@
 
 <script>
 export default {
-  computed: {
-    project () {
-      return this.$store.getters['projects/selectedProject']
-    }
-  },
-  // checking for params id in url
-  validate ({ params }) {
-    return Boolean(params.id)
-  },
-  async fetch ({ store, params, error }) {
+  async fetch({ store, params, error }) {
     // preparing selected project data
     try {
       await store.dispatch('projects/fetchProject', params.id)
     } catch (e) {
       error()
     }
+  },
+  computed: {
+    project() {
+      return this.$store.getters['projects/selectedProject']
+    }
+  },
+  // checking for params id in url
+  validate({ params }) {
+    return Boolean(params.id)
   }
 }
 </script>
 
-<style lang="css" scoped>
-</style>
+<style lang="css" scoped></style>

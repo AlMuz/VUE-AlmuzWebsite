@@ -2,21 +2,21 @@
   <div id="notFound">
     <div class="notFound">
       <div class="notFound-404">
-        <h5>{{ $t("notFound.header") }}</h5>
+        <h5>{{ $t('notFound.header') }}</h5>
         <h3>
           <span>4</span>
           <span>0</span>
           <span>4</span>
         </h3>
       </div>
-      <h4>{{ $t("notFound.text") }}</h4>
+      <h4>{{ $t('notFound.text') }}</h4>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  head () {
+  head() {
     return {
       title: '404'
     }
@@ -34,8 +34,8 @@ export default {
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 .notFound {
   max-width: 520px;
@@ -52,8 +52,8 @@ export default {
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   font-size: 200px;
   font-weight: 900;
   margin: 0px;
@@ -62,7 +62,7 @@ export default {
   letter-spacing: -40px;
   margin-left: -20px;
 }
-.notFound .notFound-404 h3>span {
+.notFound .notFound-404 h3 > span {
   text-shadow: -8px 0px 0px #fff;
 }
 .notFound .notFound-404 h5 {
@@ -83,7 +83,9 @@ export default {
   margin-top: 0px;
   margin-bottom: 25px;
 }
-.notFound h3, .notFound h4, .notFound h5 {
+.notFound h3,
+.notFound h4,
+.notFound h5 {
   text-decoration: none;
 }
 @media only screen and (max-width: 767px) {
