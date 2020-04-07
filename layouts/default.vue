@@ -18,6 +18,7 @@
 import Jumbotron from '@/components/Jumbotron'
 import Navbar from '@/components/Navbar'
 export default {
+  middleware: 'intro',
   components: {
     Jumbotron,
     Navbar
