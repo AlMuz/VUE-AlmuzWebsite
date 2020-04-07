@@ -59,9 +59,7 @@ export default {
     return {
       form: {
         email: '',
-        name: this.$store.getters.getVisitorName
-          ? this.$store.getters.getVisitorName
-          : '',
+        name: this.$cookiz.get('name') ? this.$cookiz.get('name') : '',
         message: ''
       },
       show: true
